@@ -1,0 +1,50 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 1280px; 
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 5px;
+  width: 100%;
+}
+
+.buttons {
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+button {
+  padding: 8px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: grey;
+  color: whitesmoke;
+}
