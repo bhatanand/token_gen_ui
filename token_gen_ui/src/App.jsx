@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import TokenDisplay from './TokenDisplay';
 function App() {
   const [numBlueTokens, setNumBlueTokens] = useState(0);
   const [bluePrefix, setBluePrefix] = useState('A');
@@ -87,6 +88,10 @@ function App() {
           <button type="button" onClick={handleClear}>Clear</button>
         </div>
       </form>
+      <div className="token-display">
+        <TokenDisplay tokens={tokens.blue} tokensPerRow={blueTokensPerRow} color="blue" />
+        <TokenDisplay tokens={tokens.red} tokensPerRow={redTokensPerRow} color="red" />
+      </div>
       </div>
   );
 }
